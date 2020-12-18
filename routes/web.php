@@ -31,3 +31,7 @@ Route::get('/user/{id?}',function ($id = null){
     }
     return 'No users found';
 });
+
+Route::get('/test/middleware', function (){
+    return 'this should call the LogMyRoute middleware!';
+})->middleware('logmyroute');
