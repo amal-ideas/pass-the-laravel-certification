@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello',function (){
+    return 'Hello World';
+});
+
+Route::match(['get','post'],'/testing',function (){
+   return 'Both get and post requested!';
+})->name('get');
+
+Route::get('/user/{id?}',function ($id = null){
+    if(!is_null($id)) {
+        return 'User:' . $id;
+    }
+    return 'No users found';
+});
