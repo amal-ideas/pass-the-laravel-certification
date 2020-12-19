@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/hello',function (){
-    return 'Hello World';
+    return Response()->caps('hello world');
 });
 
 Route::match(['get','post'],'/testing',function (){
@@ -39,4 +39,8 @@ Route::get('/test/middleware', function (){
 Route::get('ticket','TicketsController@index')->name('tickets.show');
 Route::post('ticket','TicketsController@store')->name('tickets.create');
 
-Route::get('/tickets/name/{name}', 'TicketsController$name');
+//Route::get('/tickets/name/{name}', 'TicketsController$name');
+
+Route::get('/test-json', function () {
+    return ['numbers' => [1, 2, 3, 4, 5]];
+});
