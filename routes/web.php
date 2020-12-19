@@ -38,3 +38,5 @@ Route::get('/test/middleware', function (){
 
 Route::get('ticket','TicketsController@index')->name('tickets.show');
 Route::post('ticket','TicketsController@store')->name('tickets.create');
+
+Route::get('/tickets/name/{name}', 'TicketsController$name');

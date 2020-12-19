@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086e89cd-7724-4544-a9ea-ab8aacc4196e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Process/Test1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Process/Test2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Process/TestingInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TicketsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TicketsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +167,7 @@
       <updated>1608277041498</updated>
       <workItem from="1608277044149" duration="358000" />
       <workItem from="1608278668400" duration="6692000" />
+      <workItem from="1608375979593" duration="838000" />
     </task>
     <servers />
   </component>

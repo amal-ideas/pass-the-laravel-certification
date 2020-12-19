@@ -12,9 +12,13 @@ class TicketsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(TestingInterface $test)
+    public function index(Request $request)
     {
-        return $test->print();
+
+        $age = $request->query('age');
+        dd($age);
+        return view('tickets.index');
+        //return $test->print();
     }
 
     /**
@@ -35,6 +39,8 @@ class TicketsController extends Controller
      */
     public function store(Request $request)
     {
+        $name = $request->input('name');
+        dd($name);
         return redirect()->route('tickets.show');
     }
 
@@ -81,5 +87,9 @@ class TicketsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function name(Request $request, $name){
+        dd($name);
     }
 }
