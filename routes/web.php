@@ -35,3 +35,6 @@ Route::get('/user/{id?}',function ($id = null){
 Route::get('/test/middleware', function (){
     return 'this should call the LogMyRoute middleware!';
 })->middleware('logmyroute');
+
+Route::get('ticket','TicketsController@index')->name('tickets.show');
+Route::post('ticket','TicketsController@store')->name('tickets.create');
